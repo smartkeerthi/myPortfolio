@@ -1,0 +1,23 @@
+---
+title: Projects
+layout: 'base.njk'
+---
+
+
+<main class="projects" data-barba="container" data-barba-namespace="projects">
+    <ul role="list" class="articles__list flow gsap">
+        {%- for project in collections.kkprojects | reverse -%}
+        <li>
+            <article class="blogPost">
+                <img src={{ project.data.image }} alt={{ project.data.imageAlt }} class="blogPost__image">
+                <div class="blogPost__content">
+                    <h3 class="blogPost__title"><a href={{ project.data.url }}
+                            target="_blank">{{project.data.title}}</a></h3>
+                    <p class="blogPost__body">{{project.data.description}}</p>
+                    <a href={{ project.data.url }} class="btn btn-primary" target="_blank">{{ project.data.linkName }}</a>
+                </div>
+            </article>
+        </li>
+        {%- endfor %}
+    </ul>
+</main>

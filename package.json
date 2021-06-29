@@ -1,0 +1,27 @@
+{
+  "name": "keerthivasan-portfolio",
+  "version": "1.0.0",
+  "description": "keerthivasan portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartkeerthi/myPortfolio.git"
+  },
+  "keywords": [
+    "kk",
+    "portfolio"
+  ],
+  "author": "keerthivasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smartkeerthi/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/smartkeerthi/myPortfolio#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
