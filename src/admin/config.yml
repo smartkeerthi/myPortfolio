@@ -19,3 +19,15 @@ collections:
       - { label: "Image Name", name: "imageAlt", widget: "string" }
       - { label: "Code location", name: "linkName", widget: "string" }
       - { label: "Url", name: "url", widget: "string" }
+  - name: "works"
+    label: "works"
+    folder: "src/work"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Company Name", name: "companyName", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Start Date", name: "startDate", widget: "datetime" }
+      - { label: "End Date", name: "endDate", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["works"] }

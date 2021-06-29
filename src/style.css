@@ -172,7 +172,22 @@ a {
     height: 100%;
     overflow-y: auto;
 }
-
+.educationDetails{
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.schoolName, .percentage{
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+.educationDetails p{
+    margin: 0;
+}
+.percentage{
+    text-decoration: none;
+}
 /* Projects page */
 
 .projects {
@@ -294,6 +309,9 @@ a {
         color: var(--text-color);
         font-size: 0.9em;
         text-decoration: none;
+    }
+    .blogPost{
+        flex-direction: column;
     }
 }
 

@@ -11,11 +11,19 @@ layout: 'base.njk'
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about"
-                type="button" role="tab" aria-controls="pills-about" aria-selected="true">about</button>
+                type="button" role="tab" aria-controls="pills-about" aria-selected="true">About</button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills"
-                type="button" role="tab" aria-controls="pills-skills" aria-selected="false">skills</button>
+                type="button" role="tab" aria-controls="pills-skills" aria-selected="false">Skills</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education"
+                type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-work-tab" data-bs-toggle="pill" data-bs-target="#pills-work"
+                type="button" role="tab" aria-controls="pills-work" aria-selected="false">Work Experience</button>
         </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
@@ -36,6 +44,39 @@ layout: 'base.njk'
                 <li class="mb-4">--> React Js </li>
                 <li class="mb-4">--> Angular Js </li>
                 <li class="mb-4">--> Bootstrap </li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+            <ul>
+                <li class="educationDetails">
+                    <h3 class="schoolName">Perunthalaivar Kamarajar Institute of Engineering and Technology</h3>
+                    <p class="years">2017-2021</p>
+                    <p class="degree">B.Tech Electronics and Communication Engineering</p>
+                    <h4 class="percentage">65.5 %</h4>
+                </li>
+                <li class="educationDetails">
+                    <h3 class="schoolName">Stansford International Higher Secondary School</h3>
+                    <p class="years">2015-2017</p>
+                    <p class="degree">Higher secondary (+2)</p>
+                    <h4 class="percentage">82.58 %</h4>
+                </li>
+                <li class="educationDetails">
+                    <h3 class="schoolName">Stansford International Higher Secondary School</h3>
+                    <p class="years">2014-2015</p>
+                    <p class="degree">SSLC (10th)</p>
+                    <h4 class="percentage">97.2 %</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab">
+            <ul>
+                {%- for work in collections.works -%}
+                    <li class="educationDetails">
+                        <h3 class="schoolName">{{ work.data.comapanyName }}</h3>
+                        <p class="years">{{ work.data.startDate }} &nbsp; - &nbsp; <span>{{ work.data.endDate }}</span></p>
+                        <p class="degree">{{ work.data.description }}</p>
+                    </li>
+                {%- endfor %}
             </ul>
         </div>
     </div>
