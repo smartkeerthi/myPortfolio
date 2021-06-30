@@ -4,14 +4,38 @@ layout: 'base.njk'
 ---
 
 
-<main class="main" data-barba="container" data-barba-namespace="home">
-    <div class="text gsap">
-        <h2>Hi!</h2>
-        <h1>I'm <span>KEERTHIVASAN</span></h1>
-        <h4>Web developer, Software developer</h4>
-        <a href="/about">About Me</a>
+<section class="section gsapSection home d-flex align-items-center justify-content-center transition-fade" id="swup">
+    <div class="row w-85 h-100">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column align-items-start justify-content-center ps-5 position-relative">
+            <h2>Hi!</h2>
+            <h1 style="z-index: 2;">I'm <span style="text-decoration: underline; z-index: 10;">KEERTHIVASAN</span><span class="backdrop">KK</span></h1>
+            <h4>Web developer, Software developer</h4>
+            <a href="/about.html" class="btn-styled">About Me</a>
+        </div>
+        <div class="col-lg-6 col-md-12 column-right">
+            <img src="../assets/img/welcome.png" alt="welcome" class="img-fluid">
+        </div>
     </div>
-    <div class="image">
-        <img src="/assets/img/welcome.png" alt="welcome image">
+</section>
+
+
+<section class="section gsapSection about d-flex align-items-center justify-content-center">
+    <div class="row w-85 h-100">
+        <div class="col-12 d-flex flex-column align-items-start justify-content-center ps-5 position-relative container">
+            <p class="lead p-4 w-75" style="font-size: 1.6em;">This is KEERTHIVASAN. I am a software developer and web developer. Persuving B.Tech in electronics and Communication Engineering</p>
+            <a href="/about" class="btn-styled">About Me</a>
+        </div>
     </div>
-</main>
+    <h1 class="sectionTitle display-3">About Me</h1>
+</section>
+
+
+<section class="section gsapSection project d-flex align-items-center justify-content-center">
+    <h1 class="sectionTitle projectTitle display-3">Projects</h1>
+    <div class="row w-85 h-100">
+        <div class="col-12 d-flex flex-column align-items-start justify-content-center ps-5 position-relative container">
+            <p class="w-75 mx-auto display-6">Here are some of my projects which is created</p>
+            <a href="/projects" class="btn-styled mx-auto">Go to projects page</a>
+        </div>
+    </div>
+</section>

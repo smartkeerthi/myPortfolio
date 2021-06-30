@@ -4,20 +4,20 @@ layout: 'base.njk'
 ---
 
 
-<main class="projects" data-barba="container" data-barba-namespace="projects">
-    <ul role="list" class="articles__list flow gsap">
+<section class="section w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+    <h1 class="sectionTitle projectTitle display-3" style="writing-mode: horizontal-tb; transform: rotate(0deg);">Projects</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4 container">
         {%- for project in collections.kkprojects | reverse -%}
-        <li>
-            <article class="blogPost">
-                <img src={{ project.data.image }} alt={{ project.data.imageAlt }} class="blogPost__image">
-                <div class="blogPost__content">
-                    <h3 class="blogPost__title"><a href={{ project.data.url }}
-                            target="_blank">{{project.data.title}}</a></h3>
-                    <p class="blogPost__body">{{project.data.description}}</p>
+            <div class="col">
+                <div class="card">
+                <img src={{ project.data.image }} class="card-img-top" alt={{ project.data.imageAlt }}>
+                <div class="card-body">
+                    <h5 class="card-title"><a href={{ project.data.url }} target="_blank">{{ project.data.title }}</a></h5>
+                    <p class="card-text">{{ project.data.description }}</p>
                     <a href={{ project.data.url }} class="btn btn-primary" target="_blank">{{ project.data.linkName }}</a>
                 </div>
-            </article>
-        </li>
+                </div>
+            </div>
         {%- endfor %}
-    </ul>
-</main>
+    </div>
+</section>

@@ -4,80 +4,96 @@ layout: 'base.njk'
 ---
 
 
-<main class="about gsap" data-barba="container" data-barba-namespace="about">
-    <br>
-    <br>
-    <br>
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about"
-                type="button" role="tab" aria-controls="pills-about" aria-selected="true">About</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills"
-                type="button" role="tab" aria-controls="pills-skills" aria-selected="false">Skills</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education"
-                type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-work-tab" data-bs-toggle="pill" data-bs-target="#pills-work"
-                type="button" role="tab" aria-controls="pills-work" aria-selected="false">Work Experience</button>
-        </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
-            <ul>
-                <li class="mb-4">--> Persuving Under Graduate in Electronics and Communication Engineering at
-                    Perunthalaivar Kamarajar Institute Of Engineering and Technology </li>
-                <li class="mb-4">--> Interested in Web development and software development </li>
-                <li class="mb-4">--> I have done some of the projects in web development </li>
-            </ul>
+<section class="section w-100 h-100 d-flex align-items-center justify-content-evenly flex-column">
+    <h1 class="sectionTitle display-3 overflow-hidden" style="writing-mode: horizontal-tb;">About Me</h1>
+    <div class="accordion w-75 mx-auto" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Personal
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <li class="mb-4"> Persuving Under Graduate in Electronics and Communication Engineering at
+                Perunthalaivar Kamarajar Institute Of Engineering and Technology </li>
+                <li class="mb-4"> Interested in Web development and software development </li>
+                <li class="mb-4"> I have done some of the projects in web development </li>
+            </div>
+            </div>
         </div>
-        <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab">
-            <ul>
-                <li class="mb-4">--> HTML </li>
-                <li class="mb-4">--> CSS </li>
-                <li class="mb-4">--> Javascript </li>
-                <li class="mb-4">--> Python </li>
-                <li class="mb-4">--> React Js </li>
-                <li class="mb-4">--> Angular Js </li>
-                <li class="mb-4">--> Bootstrap </li>
-            </ul>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Skills
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row">
+                <div class="col">
+                    <li class="mb-4"> HTML </li>
+                    <li class="mb-4"> CSS </li>
+                    <li class="mb-4"> Javascript </li>
+                    <li class="mb-4"> React Js </li>
+                    <li class="mb-4"> Angular Js </li>
+                    <li class="mb-4"> Bootstrap </li>
+                </div>
+                <div class="col">
+                    <li class="mb-4"> C </li>
+                    <li class="mb-4"> C++ </li>
+                    <li class="mb-4"> Python </li>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-        <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
-            <ul>
-                <li class="educationDetails">
-                    <h3 class="schoolName">Perunthalaivar Kamarajar Institute of Engineering and Technology</h3>
-                    <p class="years">2017-2021</p>
-                    <p class="degree">B.Tech Electronics and Communication Engineering</p>
-                    <h4 class="percentage">65.5 %</h4>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Education
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body list-unstyled">
+                <li class="mb-2">
+                <h4 class="m-0">Perunthalaivar Kamarajar Institute of Engineering and Technology</h4>
+                <p class="m-0">2017-2021</p>
+                <p class="m-0">B.Tech Electronics and Communication Engineering</p>
+                <h4 class="m-0">65.5 %</h4>
                 </li>
-                <li class="educationDetails">
-                    <h3 class="schoolName">Stansford International Higher Secondary School</h3>
-                    <p class="years">2015-2017</p>
-                    <p class="degree">Higher secondary (+2)</p>
-                    <h4 class="percentage">82.58 %</h4>
+                <li class="mb-2">
+                <h4 class="m-0">Stansford International Higher Secondary School</h4>
+                <p class="m-0">2015-2017</p>
+                <p class="m-0">Higher secondary (+2)</p>
+                <h4 class="m-0">82.58 %</h4>
                 </li>
-                <li class="educationDetails">
-                    <h3 class="schoolName">Stansford International Higher Secondary School</h3>
-                    <p class="years">2014-2015</p>
-                    <p class="degree">SSLC (10th)</p>
-                    <h4 class="percentage">97.2 %</h4>
+                <li class="mb-2">
+                <h4 class="m-0">Stansford International Higher Secondary School</h4>
+                <p class="m-0">2014-2015</p>
+                <p class="m-0">SSLC (10th)</p>
+                <h4 class="m-0">97.2 %</h4>
                 </li>
-            </ul>
+            </div>
+            </div>
         </div>
-        <div class="tab-pane fade" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab">
-            <ul>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Work Experience
+            </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
                 {%- for work in collections.works -%}
-                    <li class="educationDetails">
-                        <h3 class="schoolName">{{ work.data.companyName }}</h3>
-                        <p class="years">{{ work.data.startDate }} &nbsp; - &nbsp; <span>{{ work.data.endDate }}</span></p>
-                        <p class="degree">{{ work.data.description }}</p>
+                    <li class="mb-2">
+                        <h3 class="m-0">{{ work.data.companyName }}</h3>
+                        <p class="m-0">{{ work.data.startDate }} &nbsp; - &nbsp; <span>{{ work.data.endDate }}</span></p>
+                        <p class="m-0">{{ work.data.description }}</p>
                     </li>
                 {%- endfor %}
-            </ul>
+            </div>
+            </div>
         </div>
     </div>
-</main>
+</section>
