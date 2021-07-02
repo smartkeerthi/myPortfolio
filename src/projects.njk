@@ -13,6 +13,7 @@ layout: 'base.njk'
                 <img src={{ project.data.image }} class="card-img-top" alt={{ project.data.imageAlt }}>
                 <div class="card-body">
                     <h5 class="card-title"><a href={{ project.data.url }} target="_blank">{{ project.data.title }}</a></h5>
+                    <p style="font-size: 14px; color: #a3a3a3; letter-spacing: 1.3px;">{{ project.data.tags }}</p>
                     <p class="card-text">{{ project.data.description }}</p>
                     <a href={{ project.data.url }} class="btn btn-primary" target="_blank">{{ project.data.linkName }}</a>
                 </div>
