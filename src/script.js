@@ -10,3 +10,5 @@ gsap.utils.toArray('.gsapSection').forEach(section => {
         pinSpacing: false
     });
 });
+
+gsap.from('.section', { duration: 1.5, opacity: 0, x: -50 });
