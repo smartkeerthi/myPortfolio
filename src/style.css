@@ -1,9 +1,8 @@
 :root {
-    --text-color-dark: hsl(248, 80%, 57%);
-    --text-color-light: hsl(248, 97%, 74%);
-    --background-color-nav: hsl(60, 100%, 88%);
-    --background-color: hsl(60, 56%, 91%);
-    --scroll-color: hsl(60, 100%, 97%);
+    --primary-color: #0a1931;
+    --secondary-color: #efefef;
+    --accent-color-1: #185adb;
+    --accent-color-2: #ffc947;
 }
 
 * {
@@ -12,7 +11,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     scrollbar-width: thin;
-    scrollbar-color: var(--scroll-color) var(--text-color-light);
+    scrollbar-color: var(--primary-color) var(--secondary-color);
     overflow-x: hidden;
 }
 
@@ -21,13 +20,13 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--scroll-color);
+    background: var(--primary-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--text-color-light);
+    background-color: var(--secondary-color);
     border-radius: 20px;
-    border: 2px solid var(--background-color);
+    border: 3px solid var(--primary-color);
 }
 
 .w-85 {
@@ -41,43 +40,49 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--background-color-nav) !important;
+    background-color: var(--primary-color) !important;
     z-index: 1000;
 }
 
 .navbar-brand {
-    color: var(--text-color-dark) !important;
+    color: var(--secondary-color) !important;
     font-weight: 700;
     padding-bottom: 0px !important;
-    border-bottom: 2px solid var(--text-color-dark);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.nav-item {
+    overflow: hidden;
 }
 
 .nav-link {
     font-weight: 500;
-    color: var(--text-color-light) !important;
+    color: var(--secondary-color) !important;
+    transition: all 0.3s ease-in !important;
+    margin-right: 1em;
 }
 
 .nav-link:hover {
-    color: var(--text-color-dark) !important;
+    transform: scale(1.2);
 }
 
 .section {
     width: 100vw;
     height: 100vh;
     padding-top: 4rem;
-    position: sticky;
 }
 
 /* section home */
 
 .home {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
-.btn-styled {
+.btn-styled, .btn-styled-1 {
     padding: 10px 20px;
-    border: 2px solid var(--text-color-dark);
-    color: var(--text-color-dark);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
     transition: 0.3s all ease;
     margin-top: 2em;
     border-bottom-right-radius: 50px;
@@ -85,54 +90,82 @@
     position: relative;
     z-index: 1;
     text-decoration: none;
+    font-size: 1em;
 }
 
 .btn-styled:hover {
-    background-color: var(--text-color-dark);
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
-.backdrop {
+.circle {
     position: absolute;
+    top: 13em;
+    right: 13em;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: var(--accent-color-1);
+    opacity: 0.5;
     z-index: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: hsla(248, 97%, 74%, 0.3);
-    font-size: 5em;
-}
-
-.column-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* about section */
 
 .about {
-    background-color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .sectionTitle {
     writing-mode: vertical-rl;
     text-transform: uppercase;
-    color: var(--text-color-dark);
+    color: var(--primary-color);
+}
+
+.btn-styled-1 {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-styled-1:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* project section */
 
 .project {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .projectTitle {
     writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    transform: rotate(180deg) !important;
+    color: var(--secondary-color);
 }
 
-@media screen and (max-width: 1000px) {
-    .column-right {
-        display: none !important;
-    }
+.aboutContainer, .projectContainer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    min-height: 100vh;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
+    padding: 5px 20px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1.3px;
 }

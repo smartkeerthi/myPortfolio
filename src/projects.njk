@@ -4,19 +4,19 @@ layout: 'base.njk'
 ---
 
 
-<section class="section w-100 h-100 d-flex align-items-center justify-content-center flex-column">
-    <h1 class="sectionTitle projectTitle display-3" style="writing-mode: horizontal-tb; transform: rotate(0deg);">Projects</h1>
+<section class="section projectContainer w-100 h-100 d-flex align-items-center justify-content-center flex-column pb-4">
+    <h1 class="sectionTitle projectTitle display-3" style="writing-mode: horizontal-tb; transform: rotate(0deg) !important; color: var(--primary-color);">Projects</h1>
     <div class="row row-cols-1 row-cols-md-2 g-4 container">
         {%- for project in collections.kkprojects | reverse -%}
             <div class="col">
-                <div class="card">
-                <img src={{ project.data.image }} class="card-img-top" alt={{ project.data.imageAlt }}>
-                <div class="card-body">
-                    <h5 class="card-title"><a href={{ project.data.url }} target="_blank">{{ project.data.title }}</a></h5>
-                    <p style="font-size: 14px; color: #a3a3a3; letter-spacing: 1.3px;">{{ project.data.tags }}</p>
-                    <p class="card-text">{{ project.data.description }}</p>
-                    <a href={{ project.data.url }} class="btn btn-primary" target="_blank">{{ project.data.linkName }}</a>
-                </div>
+                <div class="card" style="background-color: var(--primary-color); color: var(--secondary-color); border: 1px solid var(--secondary-color); padding: 10px;">
+                    <img src={{ project.data.image }} class="card-img-top" alt={{ project.data.imageAlt }}>
+                    <div class="card-body">
+                        <h5 class="card-title"><a href={{ project.data.url }} target="_blank" style="color: var(--accent-color-2);">{{ project.data.title }}</a></h5>
+                        <p style="font-size: 14px; color: #a3a3a3; letter-spacing: 1.3px;">{{ project.data.tags }}</p>
+                        <p class="card-text">{{ project.data.description }}</p>
+                        <a href={{ project.data.url }} class="btn btn-primary" target="_blank" style="background-color: var(--accent-color-2); border: none; color: var(--primary-color);">{{ project.data.linkName }}</a>
+                    </div>
                 </div>
             </div>
         {%- endfor %}
