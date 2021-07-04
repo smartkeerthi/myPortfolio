@@ -4,7 +4,7 @@ layout: 'base.njk'
 ---
 
 
-<section class="section gsapSection home d-flex align-items-center justify-content-center transition-fade position-relative" id="swup">
+<section class="section gsapSection home d-flex align-items-center justify-content-center transition-fade position-relative flex-column" id="swup">
     <div class="row w-85 h-100" data-aos="fade-down" data-aos-offset="500" data-aos-easing="ease-in-sine">
         <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center ps-5 position-relative">
             <h2 class="display-2" style="z-index: 100;">Hi!</h2>
@@ -14,6 +14,11 @@ layout: 'base.njk'
         </div>
     </div>
     <span class="circle"></span>
+    <div class="themes">
+        <button class="theme one" onclick="changeTheme('dark')"></button>
+        <button class="theme two" onclick="changeTheme('white')"></button>
+        <button class="theme three" onclick="changeTheme('blue')"></button>
+    </div>
 </section>
 
 
@@ -36,6 +41,31 @@ layout: 'base.njk'
             <a href="/projects" class="btn-styled mx-auto">Go to projects page</a>
         </div>
     </div>
+</section>
+
+
+<section class="section gsapSection contact d-flex align-items-center justify-content-center">
+    <div class="row w-85" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="col-lg-4 col-md-12 text-center">
+            <a href="https://www.linkedin.com/in/keerthivasan-k-b8476018b/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                <i class="fab fa-linkedin display-4" style="color: var(--primary-color);"></i>
+                <p class="display-5" style="color: var(--accent-color-1);">Linkedin</p>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-12 text-center">
+            <a href="https://github.com/smartkeerthi" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                <i class="fab fa-github display-4" style="color: var(--primary-color);"></i>
+                <p class="display-5" style="color: var(--accent-color-1);">Github</p>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-12 text-center">
+            <a href="https://www.youtube.com/channel/UCe4IttsqYUKjG_6Sdk_jlMw" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                <i class="fab fa-youtube display-4" style="color: var(--primary-color);"></i>
+                <p class="display-5" style="color: var(--accent-color-1);">YouTube</p>
+            </a>
+        </div>
+    </div>
+    <h1 class="sectionTitle contactTitle display-3" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">Contact</h1>
 </section>
 
 <footer>

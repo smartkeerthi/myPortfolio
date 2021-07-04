@@ -33,6 +33,10 @@
     width: 85%;
 }
 
+.w-95 {
+    width: 95%;
+}
+
 /* Navbar */
 
 .navbar {
@@ -116,6 +120,36 @@
     z-index: 0;
 }
 
+.themes {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 5px 10px;
+}
+
+.theme {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8),
+                0 0 5px rgba(255, 255, 255, 0.8);
+    margin-left: 5px;
+}
+
+.one {
+    background-color: #0a1931;
+}
+
+.two {
+    background-color: #fff3e6;
+}
+
+.three {
+    background-color: #b5eaea;
+}
+
 /* about section */
 
 .about {
@@ -156,6 +190,12 @@
     background-color: var(--primary-color);
     color: var(--secondary-color);
     min-height: 100vh;
+}
+
+/* Contact */
+.contact {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 /* footer */
