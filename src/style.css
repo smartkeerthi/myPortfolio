@@ -136,6 +136,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.8),
                 0 0 5px rgba(255, 255, 255, 0.8);
     margin-left: 5px;
+    border: 1px solid #fff;
 }
 
 .one {
@@ -148,6 +149,14 @@
 
 .three {
     background-color: #b5eaea;
+}
+
+.four {
+    background-color: #364f6b;
+}
+
+.five {
+    background-color: #4f3961;
 }
 
 /* about section */
