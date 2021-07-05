@@ -2,6 +2,17 @@
 AOS.init();
 
 root = document.querySelector(':root')
+var themeName;
+
+window.addEventListener('load', () => {
+    const themes = localStorage.getItem('theme')
+    if(themes == null) {
+        localStorage.setItem('theme', 'dark')
+        changeTheme('dark')
+    }else {
+        changeTheme(themes)
+    }
+})
 
 function changeTheme(color) {
     if(color == 'white') {
@@ -20,4 +31,9 @@ function changeTheme(color) {
         root.style.setProperty('--accent-color-1', '#185adb')
         root.style.setProperty('--accent-color-2', '#ffc947')
     }
+}
+
+function setTheme(colorName) {
+    localStorage.setItem('theme', colorName)
+    changeTheme(colorName)
 }
