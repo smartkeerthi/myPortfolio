@@ -90,6 +90,7 @@ layout: 'base.njk'
                 {%- for work in collections.works -%}
                     <li class="mb-2">
                         <h3 class="m-0">{{ work.data.companyName }}</h3>
+                        <p class="m-0">{{ work.data.title }}</p>
                         <p class="m-0">{{ work.data.startDate }} &nbsp; - &nbsp; <span>{{ work.data.endDate }}</span></p>
                         <p class="m-0">{{ work.data.description }}</p>
                     </li>
