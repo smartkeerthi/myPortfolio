@@ -13,6 +13,6 @@ tags:
   - kkprojects
 image: /assets/img/98.jpg
 imageAlt: Chatzz
-linkName: https://github.com/smartkeerthi/chatzz
-url: chatzz-peach.vercel.app
+linkName: Website
+url: https://chatzz-peach.vercel.app/login
 ---
