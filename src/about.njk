@@ -9,13 +9,13 @@ layout: 'base.njk'
     <div class="accordion w-75 mx-auto" id="accordionExample" style="margin-bottom: 100px;">
         <div class="accordion-item" style="background-color: var(--primary-color); border: 1px solid var(--secondary-color);>
             <h2 class="accordion-header" id="headingOne">
-            <button style="border-bottom: 1px solid var(--secondary-color); color: var(--secondary-color); background-color: var(--primary-color);" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button style="border-bottom: 1px solid var(--secondary-color); color: var(--secondary-color); background-color: var(--primary-color);" class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Personal
             </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <li class="mb-4"> Web Developer with 3+ years of IT experience primarily in Java-based support projects, complemented by strong
+                <li class="mb-4"> Web Developer with 4 years of IT experience primarily in Java-based support projects, complemented by strong
 hands-on experience in frontend and full-stack web development. Experienced in building modern web and mobile
 applications using React, Next.js, and React Native. Adept at automation, monitoring, and cloud-native platforms,
 with a strong problem-solving mindset and production support exposure. </li>
@@ -24,7 +24,7 @@ with a strong problem-solving mindset and production support exposure. </li>
         </div>
         <div class="accordion-item" style="background-color: var(--primary-color); border: 1px solid var(--secondary-color);>
             <h2 class="accordion-header" id="headingTwo">
-            <button style="border-bottom: 1px solid var(--secondary-color); color: var(--secondary-color); background-color: var(--primary-color);" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button style="border-bottom: 1px solid var(--secondary-color); color: var(--secondary-color); background-color: var(--primary-color);" class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Skills
             </button>
             </h2>
@@ -79,36 +79,36 @@ with a strong problem-solving mindset and production support exposure. </li>
         </div>
         <div class="accordion-item" style="background-color: var(--primary-color); border: 1px solid var(--secondary-color);>
             <h2 class="accordion-header" id="headingThree">
-            <button style="border-bottom: 1px solid var(--secondary-color); color: var(--secondary-color); background-color: var(--primary-color);" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button style="border-bottom: 1px solid var(--secondary-color); color: var(--secondary-color); background-color: var(--primary-color);" class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Education
             </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body list-unstyled">
                 <li class="mb-2">
-                <h4 class="m-0">Perunthalaivar Kamarajar Institute of Engineering and Technology</h4>
+                <h6 class="m-0">Perunthalaivar Kamarajar Institute of Engineering and Technology</h6>
                 <p class="m-0">2017-2021</p>
-                <p class="m-0">B.Tech Electronics and Communication Engineering</p>
-                <h4 class="m-0">7.5 CGPA</h4>
+                <p class="m-0">B.Tech - Electronics and Communication Engineering</p>
+                <h6 class="m-0">7.5 CGPA</h6>
                 </li>
                 <li class="mb-2">
                 <h4 class="m-0">Stansford International Higher Secondary School</h4>
                 <p class="m-0">2015-2017</p>
                 <p class="m-0">Higher secondary (+2)</p>
-                <h4 class="m-0">82.58%</h4>
+                <h6 class="m-0">82.58%</h6>
                 </li>
                 <li class="mb-2">
                 <h4 class="m-0">Stansford International Higher Secondary School</h4>
                 <p class="m-0">2014-2015</p>
                 <p class="m-0">SSLC (10th)</p>
-                <h4 class="m-0">97.2%</h4>
+                <h6 class="m-0">97.2%</h6>
                 </li>
             </div>
             </div>
         </div>
         <div class="accordion-item" style="background-color: var(--primary-color); border: 1px solid var(--secondary-color);>
             <h2 class="accordion-header" id="headingFour">
-            <button style="border-bottom: 1px solid var(--secondary-color); color: var(--secondary-color); background-color: var(--primary-color);" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <button style="border-bottom: 1px solid var(--secondary-color); color: var(--secondary-color); background-color: var(--primary-color);" class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 Work Experience
             </button>
             </h2>
@@ -116,7 +116,7 @@ with a strong problem-solving mindset and production support exposure. </li>
             <div class="accordion-body">
                 {%- for work in collections.works -%}
                     <li class="mb-2">
-                        <h3 class="m-0">{{ work.data.companyName }}</h3>
+                        <h5 class="m-0">{{ work.data.companyName }}</h5>
                         <p class="m-0">{{ work.data.title }}</p>
                         <p class="m-0">{{ work.data.startDate }} &nbsp; - &nbsp; <span>{{ work.data.endDate }}</span></p>
                         <p class="m-0">{{ work.data.description }}</p>
