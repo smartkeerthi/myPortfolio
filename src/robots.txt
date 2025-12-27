@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kkvasan-2.netlify.app/sitemap.xml
