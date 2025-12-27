@@ -1,5 +1,5 @@
 ---
-title: MULTILEVEL AUTHENTICATED SECURITY SYSTEM FOR DOOR USING ARDUINO
+title: Multilevel authenticated security for door using arduino
 description: This project is to make door more secure using Arduino. In this
   project there are 4 levels to open the door. ▪ 1 st level is RFID ▪ 2 nd level
   is Fingerprint Scanner ▪ 3 rd level is Password ▪ 4 th level is OTP. If all
