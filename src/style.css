@@ -362,7 +362,7 @@ section.marquees {
     letter-spacing: 1px;
 }
 
-.about-container button {
+.about-container .download {
     width: 250px;
     height: 60px;
     font-size: 1rem;
@@ -373,10 +373,13 @@ section.marquees {
     color: #fff;
     outline: none;
     border: 0;
-    text-transform: uppercase
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.about-container button:hover {
+.about-container .download:hover {
     background-color: #fa7025;
 }
 
