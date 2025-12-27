@@ -4,72 +4,218 @@ layout: 'base.njk'
 ---
 
 
-<section class="section gsapSection home d-flex align-items-center justify-content-center transition-fade position-relative flex-column" id="swup">
-    <div class="row w-85 h-100" data-aos="fade-down" data-aos-offset="500" data-aos-easing="ease-in-sine">
-        <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center ps-5 position-relative">
-            <h2 class="display-2" style="z-index: 100;">Hi!</h2>
-            <h1 style="z-index: 2;" class="display-5 text-center">I'm <span class="display-1" style="text-decoration: underline; z-index: 1000; color: var(--accent-color-2);">KEERTHIVASAN</span></h1>
-            <h5 style="z-index: 100;">Web developer, Software developer</h5>
-            <a href="/about" class="btn-styled">About Me</a>
-        </div>
+<section class="hero" id="hero">
+  <div class="hero-container">
+    <div class="intro">
+      <p>Hello world</p>
+      <h2><span>I'm Keerthi,</span></h2>
+      <h2><span>Software engineer &</span></h2>
+      <h2><span>Web Developer</span></h2>
     </div>
-    <span class="circle"></span>
-    <div class="themes">
-        <button class="theme one" onclick="setTheme('dark')" data-bs-toggle="tooltip" data-bs-placement="top" title="Dark blue"></button>
-        <button class="theme two" onclick="setTheme('white')" data-bs-toggle="tooltip" data-bs-placement="top" title="Sandal"></button>
-        <button class="theme three" onclick="setTheme('blue')" data-bs-toggle="tooltip" data-bs-placement="top" title="Blue"></button>
-        <button class="theme four" onclick="setTheme('darkBlue')" data-bs-toggle="tooltip" data-bs-placement="top" title="Medium blue"></button>
-        <button class="theme five" onclick="setTheme('purple')" data-bs-toggle="tooltip" data-bs-placement="top" title="Purple"></button>
+    <div class="social-links">
+      <ul>
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Youtube</a></li>
+      </ul>
+      <a href="#about" class="intro-scrolldown">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+          clip-rule="evenodd">
+          <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
+        </svg>
+      </a>
     </div>
+  </div>
 </section>
 
 
-<section class="section gsapSection about d-flex align-items-center justify-content-center">
-    <div class="row w-85 h-100" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-        <div class="col-12 d-flex flex-column align-items-start justify-content-center ps-5 position-relative container">
-            <p class="lead p-4 w-75" style="font-size: 1.6em;">Java Support Engineer with 4 years of experience in maintaining and supporting enterprise applications, with a strong interest in web development and building modern, user-friendly web applications.</p>
-            <a href="/about" class="btn-styled-1">About Me</a>
-        </div>
+<section class="marquees">
+  <div class="marquee-container" id="marquee-1">
+    <div class="marquee">
+      <div class="item"><img src="./assets/img/html.png" alt="html"></div>
+      <div class="item"><img src="./assets/img/css.png" alt="css"></div>
+      <div class="item"><img src="./assets/img/nodeJs.png" alt="node"></div>
+      <div class="item"><img src="./assets/img/react.png" alt="react"></div>
+      <div class="item"><img src="./assets/img/next.png" alt="next"></div>
     </div>
-    <h1 class="sectionTitle display-3" data-aos="flip-right" data-aos-offset="300" data-aos-easing="ease-in-sine">About Me</h1>
+  </div>
+  <div class="marquee-container" id="marquee-2">
+    <div class="marquee">
+      <div class="item">
+        <h2>Web development</h2>
+      </div>
+      <div class="item">
+        <h2>Software engineer</h2>
+      </div>
+    </div>
+  </div>
+  <div class="marquee-container" id="marquee-3">
+    <div class="marquee">
+      <div class="item"><img src="./assets/img/java.png" alt="java"></div>
+      <div class="item"><img src="./assets/img/python.png" alt="python"></div>
+      <div class="item"><img src="./assets/img/dynatrace.png" alt="dynatrace"></div>
+      <div class="item"><img src="./assets/img/sql.png" alt="sql"></div>
+      <div class="item"><img src="./assets/img/mongoDB.png" alt="mongo"></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-container">
+    <h2>About me</h2>
+    <div>
+      <p>
+        Web Developer with 4 years of IT experience primarily in Java-based support projects, complemented by strong
+        hands-on
+        experience in frontend and full-stack web development. Experienced in building modern web and mobile
+        applications
+        using
+        React, Next.js, and React Native. Adept at automation, monitoring, and cloud-native platforms, with a strong
+        problem-solving mindset and production support exposure.
+      </p>
+      <button>Download Resume</button>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="skills-container">
+    <div class="title">
+      <h2>My Skills</h2>
+    </div>
+    <div class="descriptions">
+      <div class="description-container">
+        <div class="description">
+          <span>
+            <h3>Frontend & Web</h3>
+            <ul>
+              <li> HTML </li>
+              <li> CSS </li>
+              <li> React Js </li>
+              <li> Next Js </li>
+              <li> Bootstrap </li>
+            </ul>
+          </span>
+        </div>
+        <div class="description">
+          <span>
+            <h3>Mobile Development</h3>
+            <ul>
+              <li>React Native</li>
+              <li>Expo</li>
+            </ul>
+          </span>
+        </div>
+        <div class="description">
+          <span>
+            <h3>Backend & Database</h3>
+            <ul>
+              <li>Java</li>
+              <li>Python</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Prisma</li>
+            </ul>
+          </span>
+        </div>
+        <div class="description">
+          <span>
+            <h3>Cloud & DevOps</h3>
+            <ul>
+              <li>PCF</li>
+              <li>Azure Red Hat OpenShift (ARO)</li>
+            </ul>
+          </span>
+        </div>
+        <div class="description">
+          <span>
+            <h3>Monitoring & Tools</h3>
+            <ul>
+              <li>Dynatrace</li>
+              <li>Kibana</li>
+          </span>
+          </ul>
+        </div>
+        <div class="description">
+          <span>
+            <h3>others</h3>
+            <ul>
+              <li>Git</li>
+              <li>REST APIs</li>
+              <li>Automation Scripting</li>
+            </ul>
+          </span>
+        </div>
+        <div class="description">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="experiences" id="experiences">
+  <div class="experiences-container">
+    <div class="title">
+      <h2>My experiences</h2>
+    </div>
+    <div class="experiences-descriptions">
+      <div class="experiences-description-container">
+        <div class="experiences-description">
+          <ul>
+            {%- for work in collections.works | reverse -%}
+            <li>
+              <p class="title">{{ work.data.title }}</p>
+              <p class="years">{{ work.data.startDate }} &nbsp; - &nbsp; <span>{{ work.data.endDate }}</span></p>
+              <p class="name">{{ work.data.companyName }}</p>
+              <p>{{ work.data.description }}</p>
+            </li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="projects-container">
+    <h2>My Projects</h2>
+    <div class="stacking">
+      {%- for project in collections.kkprojects | reverse -%}
+      <div class="stacking-card">
+        <div class="heading">
+          <h3>{{ project.data.title }}</h3>
+          <a href={{ project.data.url }} class="link">{{ project.data.linkName }} <i
+              class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+        <div class="body">
+          <div class="left">{{ project.data.description }}</div>
+          <div class="right">
+            <img src={{ project.data.image }} alt={{ project.data.imageAlt }}>
+          </div>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <h2>My contact</h2>
+    <p>I love to hear from you. Whether you have a question or just want to chat — shoot me a message.</p>
+    <div class="email">
+      <a href="mailto:keerthianbu2000@gmail.com">keerthianbu2000@gmail.com</a>
+      <ul>
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Youtube</a></li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 
-<section class="section gsapSection project d-flex align-items-center justify-content-center">
-    <h1 class="sectionTitle projectTitle display-3" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">Projects</h1>
-    <div class="row w-85 h-100" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-        <div class="col-12 d-flex flex-column align-items-start justify-content-center ps-5 position-relative container">
-            <p class="w-75 mx-auto display-6">Here are some of my projects which is created</p>
-            <a href="/projects" class="btn-styled mx-auto">Go to projects page</a>
-        </div>
-    </div>
-</section>
-
-
-<section class="section gsapSection contact d-flex align-items-center justify-content-center">
-    <div class="row w-85" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-        <div class="col-lg-4 col-md-12 text-center">
-            <a href="https://www.linkedin.com/in/keerthivasan-k-b8476018b/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                <i class="fab fa-linkedin display-4" style="color: var(--primary-color);"></i>
-                <p class="display-5" style="color: var(--accent-color-1);">Linkedin</p>
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-12 text-center">
-            <a href="https://github.com/smartkeerthi" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                <i class="fab fa-github display-4" style="color: var(--primary-color);"></i>
-                <p class="display-5" style="color: var(--accent-color-1);">Github</p>
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-12 text-center">
-            <a href="https://www.youtube.com/channel/UCe4IttsqYUKjG_6Sdk_jlMw" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                <i class="fab fa-youtube display-4" style="color: var(--primary-color);"></i>
-                <p class="display-5" style="color: var(--accent-color-1);">YouTube</p>
-            </a>
-        </div>
-    </div>
-    <h1 class="sectionTitle contactTitle display-3" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">Contact</h1>
-</section>
-
-<footer>
-    <p>Copyright &#169; | Keerthivasan 2021</p>
+<footer class="footer">
+  <p>Copyright &#169; | Keerthivasan 2021</p>
 </footer>
