@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const isMobile = window.innerWidth <= 680;
 
     splitTextElements(".intro-title", "words, chars", true);
+    splitTextElements(".about-container div p", "words", false);
+
 
     gsap.set([".split-overlay .intro-title .first-char span", ".split-overlay .intro-title .first-char-1 span"], { y: "0%" })
     gsap.set(".split-overlay .intro-title .first-char", {
@@ -97,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
             duration: 0.75
         }, 5)
 
+
     const marqueeContainer = document.querySelectorAll(".marquee-container");
 
     marqueeContainer.forEach((container, index) => {
@@ -126,9 +129,37 @@ document.addEventListener("DOMContentLoaded", () => {
             })
     })
 
+    const tabout = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".about",
+            start: "top 8.5%",
+            end: "bottom 10%",
+            scrub: true,
+            pin: true
+        }
+    })
+
+    tabout.to(".about .about-container h2", {
+        color: "#fff",
+        duration: 0.75,
+        ease: "hop"
+    })
+        .to(".about-container div p div", {
+            opacity: 1,
+            duration: 1,
+            ease: "hop",
+            stagger: 0.05
+        }, 1)
+        .to(".about-container .download", {
+            opacity: 1,
+            y: 0,
+            ease: "hop",
+            duration: 0.75
+        }, 4)
+
     const skills = gsap.utils.toArray(".description");
 
-    const t1 = gsap.timeline({
+    const tskills = gsap.timeline({
         scrollTrigger: {
             trigger: ".skills",
             start: "top 8.5%",
@@ -141,15 +172,37 @@ document.addEventListener("DOMContentLoaded", () => {
     skills.forEach((skill, i) => {
         if (i === 0) return;
 
-        t1.to(skill, {
+        tskills.to(skill, {
             yPercent: `-${(90) * i}`,
             duration: 1
         }, i - 1);
     });
 
+    const texperinece = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".experiences",
+            start: "top 8.5%",
+            end: "bottom 10%",
+            scrub: true,
+            pin: true
+        }
+    })
+
+    texperinece.to(".experiences-container .title h2", {
+        color: "#fff",
+        duration: 0.75,
+        ease: "hop"
+    })
+        .to(".experiences-descriptions ul li p", {
+            opacity: 1,
+            duration: 1,
+            ease: "hop",
+            stagger: 0.05
+        }, 1)
+
     const cards = gsap.utils.toArray(".stacking-card");
 
-    const t2 = gsap.timeline({
+    const tcards = gsap.timeline({
         scrollTrigger: {
             trigger: ".projects",
             start: "top top",
@@ -162,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach((card, i) => {
         // if (i === 0) return;
 
-        t2.to(card, {
+        tcards.to(card, {
             yPercent: `-${(115) * i}`,
             scale: 0.9,
             duration: 1

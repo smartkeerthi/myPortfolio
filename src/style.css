@@ -347,6 +347,9 @@ section.marquees {
     text-transform: uppercase;
     transform: scaleX(1.3);
     font-weight: 900;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    will-change: color;
 }
 
 .about .about-container div {
@@ -360,6 +363,12 @@ section.marquees {
     font-size: 2rem;
     line-height: 1.5;
     letter-spacing: 1px;
+}
+
+.about-container p div {
+    padding-top: 0 !important;
+    opacity: 0;
+    will-change: opacity;
 }
 
 .about-container .download {
@@ -377,6 +386,9 @@ section.marquees {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transform: translateY(-10px);
+    will-change: opacity, transform;
 }
 
 .about-container .download:hover {
@@ -456,6 +468,9 @@ section.marquees {
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    will-change: color;
 }
 
 
@@ -467,12 +482,15 @@ section.marquees {
 
 .experiences-descriptions ul li {
     margin-bottom: 2rem;
+
 }
 
 .experiences-descriptions ul li p {
     font-size: 1.1rem;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
+    opacity: 0;
+    will-change: opacity;
 }
 
 .projects {
