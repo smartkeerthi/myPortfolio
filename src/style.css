@@ -240,7 +240,7 @@ section {
 }
 
 .social-links ul li a {
-    color: #555;
+    color: #bababa;
     writing-mode: vertical-rl;
     transition: color;
     transition-duration: 0.3s;
@@ -555,8 +555,8 @@ section.marquees {
     transition-duration: 0.5s;
 }
 
-.fa-solid {
-    transform: rotate(-45deg);
+.stacking-card .heading a svg {
+    transform: rotate(-120deg);
 }
 
 .stacking-card .body {
@@ -851,6 +851,10 @@ section.marquees {
 
     .stacking-card .body .left {
         font-size: 0.8rem;
+    }
+
+    .right img {
+        display: none;
     }
 
     .contact-container h2 {

@@ -19,7 +19,7 @@ layout: 'base.njk'
         <li><a href="https://www.youtube.com/channel/UCe4IttsqYUKjG_6Sdk_jlMw" target="_blank">Youtube</a></li>
       </ul>
       <a href="#about" class="intro-scrolldown">
-        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+        <svg width="24" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
           clip-rule="evenodd">
           <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
         </svg>
@@ -32,11 +32,11 @@ layout: 'base.njk'
 <section class="marquees">
   <div class="marquee-container" id="marquee-1">
     <div class="marquee">
-      <div class="item"><img src="./assets/img/html.png" alt="html"></div>
-      <div class="item"><img src="./assets/img/css.png" alt="css"></div>
-      <div class="item"><img src="./assets/img/nodeJs.png" alt="node"></div>
-      <div class="item"><img src="./assets/img/react.png" alt="react"></div>
-      <div class="item"><img src="./assets/img/next.png" alt="next"></div>
+      <div class="item"><img loading="lazy" src="./assets/img/html.png" alt="html"></div>
+      <div class="item"><img loading="lazy" src="./assets/img/css.png" alt="css"></div>
+      <div class="item"><img loading="lazy" src="./assets/img/nodeJs.png" alt="node"></div>
+      <div class="item"><img loading="lazy" src="./assets/img/react.png" alt="react"></div>
+      <div class="item"><img loading="lazy" src="./assets/img/next.png" alt="next"></div>
     </div>
   </div>
   <div class="marquee-container" id="marquee-2">
@@ -51,11 +51,11 @@ layout: 'base.njk'
   </div>
   <div class="marquee-container" id="marquee-3">
     <div class="marquee">
-      <div class="item"><img src="./assets/img/java.png" alt="java"></div>
-      <div class="item"><img src="./assets/img/python.png" alt="python"></div>
-      <div class="item"><img src="./assets/img/dynatrace.png" alt="dynatrace"></div>
-      <div class="item"><img src="./assets/img/sql.png" alt="sql"></div>
-      <div class="item"><img src="./assets/img/mongoDB.png" alt="mongo"></div>
+      <div class="item"><img loading="lazy" src="./assets/img/java.png" alt="java"></div>
+      <div class="item"><img loading="lazy" src="./assets/img/python.png" alt="python"></div>
+      <div class="item"><img loading="lazy" src="./assets/img/dynatrace.png" alt="dynatrace"></div>
+      <div class="item"><img loading="lazy" src="./assets/img/sql.png" alt="sql"></div>
+      <div class="item"><img loading="lazy" src="./assets/img/mongoDB.png" alt="mongo"></div>
     </div>
   </div>
 </section>
@@ -185,13 +185,17 @@ layout: 'base.njk'
       <div class="stacking-card">
         <div class="heading">
           <h3>{{ project.data.title }}</h3>
-          <a href={{ project.data.url }} class="link" target="_blank">{{ project.data.linkName }} <i
-              class="fa-solid fa-arrow-right-long"></i></a>
+          <a href={{ project.data.url }} class="link" target="_blank">{{ project.data.linkName }}
+            <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+              clip-rule="evenodd">
+              <path fill="#fff"
+                d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
+            </svg></a>
         </div>
         <div class="body">
           <div class="left">{{ project.data.description }}</div>
           <div class="right">
-            <img src={{ project.data.image }} alt={{ project.data.imageAlt }}>
+            <img loading="lazy" src={{ project.data.image }} alt={{ project.data.imageAlt }}>
           </div>
         </div>
       </div>
