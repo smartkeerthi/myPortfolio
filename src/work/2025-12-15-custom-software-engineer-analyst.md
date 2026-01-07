@@ -1,6 +1,6 @@
 ---
 title: Custom Software Engineering Analyst
-companyName: Accenture
+companyName: Accenture India Private Ltd.
 description: Working on production support for enterprise Java applications,
   handling incident analysis, bug fixes, and performance issues. Built
   Python-based automation, monitored systems using Dynatrace and Kibana, and
