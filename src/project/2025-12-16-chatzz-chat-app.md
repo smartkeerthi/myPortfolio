@@ -14,5 +14,5 @@ tags:
 image: /assets/img/98.jpg
 imageAlt: Chatzz
 linkName: Website
-url: https://chatzz-peach.vercel.app/login
+url: https://chatzz.kkvasan.in/
 ---
