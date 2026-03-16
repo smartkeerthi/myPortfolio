@@ -124,7 +124,6 @@ a {
     border: 1px solid #000;
     width: 100%;
     text-transform: uppercase;
-    padding: 20px 15px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -145,6 +144,8 @@ a {
     font-weight: 300;
     transition: color;
     transition-duration: 0.3s;
+    width: 100%;
+    padding: 20px 15px;
 }
 
 .nav-item:hover,
