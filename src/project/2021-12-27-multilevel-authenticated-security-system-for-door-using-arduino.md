@@ -7,7 +7,7 @@ description: This project is to make door more secure using Arduino. In this
   unsuccessful then door will not open and 2nd time if the any level is
   unsuccessful then Phone call will be made to alert the authorized person.
 author: keerthivasan
-date: 2021-12-27T13:42:43.213Z
+date: 2021-10-27T13:42:43.213Z
 tags:
   - kkprojects
   - FinalYearProject

@@ -1,12 +1,6 @@
 ---
 title: Chatzz chat app
-description: Built a real-time one-on-one chat application using Next.js with a
-  focus on performance, scalability, and user experience. The app supports
-  secure authentication and session management using NextAuth.js, real-time
-  messaging powered by Pusher, and efficient database operations through Prisma
-  ORM. Designed a responsive and intuitive UI, implemented protected routes, and
-  followed modern full-stack development practices to ensure smooth
-  communication and reliable data handling.
+description: Built a full stack real-time chat application as sole developer — owning the database schema (Prisma ORM + MySQL), RESTful API routes (Next.js), WebSocket messaging (Pusher), and authentication (NextAuth.js) end-to-end. Demonstrates the same full stack debugging capability I apply in production support tracing issues from database queries through API responses to frontend rendering.
 author: Keerthivasan Karunanithi
 date: 2025-12-16T04:23:24.251Z
 tags:

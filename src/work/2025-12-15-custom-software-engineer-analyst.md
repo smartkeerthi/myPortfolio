@@ -1,7 +1,7 @@
 ---
 title: Custom Software Engineering Analyst
 companyName: Accenture India Private Ltd.
-description: Over 4+ years at Accenture, I have supported and maintained 10 enterprise-grade applications across PCF and Azure Red Hat OpenShift, serving both internal client teams and external end users. I built Python automation scripts that saved the team 130 hours per month and developed an internal dashboard to monitor and trigger automation workflows in real time. I managed 100+ monthly incidents, resolving complex production issues through systematic log analysis using Dynatrace and Kibana, and collaborated closely with development teams to deliver permanent fixes. I also wrote SQL queries for data validation and root cause analysis, and produced 100+ issue resolution documents that improved team knowledge sharing and onboarding.
+description: Over 4 years at Accenture, delivering L2/L3 support for 10+ enterprise applications with 99.9% uptime across PCF and ARO. Resolved 100+ monthly incidents (20+ P1/P2), automated monitoring via 9 Python scripts saving 130+ hours/month, built an HTML/JS dashboard, performed SQL-based RCA, and authored 108+ knowledge articles to streamline onboarding and incident resolution.
 startDate: Jan 2022
 endDate: Present
 tags:
